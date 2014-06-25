@@ -10,16 +10,19 @@ package br.edu.ifes.edu.model;
  */
 public class MaquinaDeMascar implements InterfaceState{
 
-    public void insereMoeda() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void insereMoeda(int moeda) {
+        if (moeda == 1){
+            acionaAlavanca(true);
+        }else
+            acionaAlavanca(false);
     }
 
     public void ejetaMoeda() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void acionaMoeda() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void acionaAlavanca(boolean moedaValida) {
+        
     }
     
 }

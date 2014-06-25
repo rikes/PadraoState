@@ -10,9 +10,9 @@ package br.edu.ifes.edu.model;
  */
 public interface InterfaceState {
     
-    public void insereMoeda();
+    public void insereMoeda(int moeda);
     
     public void ejetaMoeda();
     
-    public void acionaMoeda();
+    public void acionaAlavanca(boolean moedaValida);
 }
