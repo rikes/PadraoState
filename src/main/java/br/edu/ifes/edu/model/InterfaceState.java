@@ -14,5 +14,5 @@ public interface InterfaceState {
     
     public void ejetaMoeda();
     
-    public void acionaAlavanca(boolean moedaValida);
+    public void acionaAlavanca(int nGomas);
 }

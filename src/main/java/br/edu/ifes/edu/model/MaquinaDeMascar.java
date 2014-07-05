@@ -9,20 +9,27 @@ package br.edu.ifes.edu.model;
  * @author 20121bsi0473
  */
 public class MaquinaDeMascar implements InterfaceState{
-
+    
+    int nGomas = 10;    
+    
     public void insereMoeda(int moeda) {
         if (moeda == 1){
-            acionaAlavanca(true);
+            this.nGomas--;
+            acionaAlavanca(this.nGomas);            
         }else
-            acionaAlavanca(false);
+            ejetaMoeda();
     }
 
     public void ejetaMoeda() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Moeda Invalida!");
     }
 
-    public void acionaAlavanca(boolean moedaValida) {
-        
+    public void acionaAlavanca(int nGomas) {
+        if(nGomas > 0){
+            System.out.println("Goma de Mascar Saindo...");
+        }else if (nGomas == 0){
+            System.out.println("Gomas de Mascar Acabaram");
+        }
     }
     
 }
