@@ -1,6 +1,6 @@
 package br.edu.ifes.app;
 
-import br.edu.ifes.edu.model.MaquinaDeMascar;
+import br.edu.ifes.model.MaquinaSetup;
 
 
 /**
@@ -11,19 +11,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        MaquinaDeMascar maquinaDeGoma = new MaquinaDeMascar();
+        MaquinaSetup maquinaGoma = new MaquinaSetup();
         
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
-        maquinaDeGoma.insereMoeda(1);
+        maquinaGoma.inserirMoeda(2);
+        maquinaGoma.acionaAlavanca();
+        maquinaGoma.entregaGoma();
     }
 }
